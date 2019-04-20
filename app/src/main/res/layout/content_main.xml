@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/fab_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_title"
+        android:text="@string/origin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:hint="@string/zip"
+            android:textSize="@dimen/tv_text_size"
+            android:id="@+id/tvZipOrigin"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:layout_weight="9"
+            android:id="@+id/ibZipOrigin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:textSize="@dimen/tv_text_size"
+            android:hint="@string/city_name"
+            android:layout_weight="3"
+            android:id="@+id/tvCityOrigin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:textSize="@dimen/tv_text_size"
+            android:hint="@string/state_name"
+            android:layout_weight="7"
+            android:id="@+id/tvStateOrigin"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_title"
+        android:text="@string/destiny" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:hint="@string/zip"
+            android:textSize="@dimen/tv_text_size"
+            android:id="@+id/tvZipDestiny"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:layout_weight="9"
+            android:id="@+id/ibZipDestiny"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:textSize="@dimen/tv_text_size"
+            android:hint="@string/city_name"
+            android:layout_weight="3"
+            android:id="@+id/tvCityDestiny"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:textSize="@dimen/tv_text_size"
+            android:hint="@string/state_name"
+            android:layout_weight="7"
+            android:id="@+id/tvStateDestiny"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/truckage_value"
+            android:layout_weight="1"
+            android:id="@+id/etTotalValue"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/truckage_weight"
+            android:layout_weight="1"
+            android:id="@+id/etWeight"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/calculate"
+        android:id="@+id/btSalvar"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvTruckage"></ListView>
+</LinearLayout>
